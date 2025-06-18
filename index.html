@@ -1,40 +1,135 @@
----
-layout: default
-title: "KI & Urheberrecht – Streitfälle 2025"
----
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script src="/dark-mode.js" defer></script>
+  <meta charset="UTF-8" />
+  <title>KI & Urheberrecht – Streitfälle 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    main {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text-color, #333);
+      background: var(--bg-color, #fff);
+    }
 
-<main>
-  <button id="toggle-dark-mode">🌙 Dark Mode</button>
-  <h1>KI & Urheberrecht – Aktuelle Streitfälle (2025)</h1>
+    a.main-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--accent-color, #4caf50);
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-  <h2>Internationale Fälle</h2>
-  <ul>
-    <li><strong>Autoren vs. OpenAI & Meta (USA):</strong><br>
-    Sammelklagen prominenter Autoren (z. B. G. R. R. Martin, S. Silverman) wegen unlizenzierter Nutzung ihrer Werke zum KI-Training.<br>
-    → Quelle: <em>The New York Times, 2024</em></li>
+    a.main-link:hover {
+      text-decoration: underline;
+    }
 
-    <li><strong>Getty Images vs. Stability AI (UK/USA):</strong><br>
-    Vorwurf: Stable Diffusion nutzt Millionen Getty-Fotos ohne Lizenz.<br>
-    → Quelle: <em>Reuters, 2024</em></li>
+    button#toggle-dark-mode {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+      background: var(--accent-color, #4caf50);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.5em 1em;
+      transition: background 0.3s ease;
+    }
 
-    <li><strong>KI-Musik & Deepfake-Stimmen (weltweit):</strong><br>
-    KI imitiert Stars wie Drake/The Weeknd – Songs tauchen auf Spotify & Co. auf.<br>
-    → Quelle: <em>BBC, 2023</em></li>
-  </ul>
+    button#toggle-dark-mode:hover {
+      background: #388e3c;
+    }
 
-  <h2>Deutschland & EU</h2>
-  <ul>
-    <li>Noch keine Grundsatzurteile, aber wachsender Druck durch Verlage, GEMA & Autorenverbände.<br>
-    → Quelle: <em>FAZ, 2025</em></li>
-  </ul>
+    footer {
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px solid #ccc;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif;
+    }
 
-  <hr>
+    footer a {
+      color: #555;
+      text-decoration: none;
+    }
 
-  <h2>Zentrale Streitfragen</h2>
-  <ul>
-    <li>Dürfen KI-Modelle mit geschützten Werken trainieren?</li>
-    <li>Wer haftet bei Ähnlichkeiten oder Kopien?</li>
-    <li>Sind KI-Outputs urheberrechtlich schützbar?</li>
-    <li>Werden Marken- oder Persönlichkeitsrechte verletzt?</li>
-  </ul>
-</main>
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="https://ralfsei.github.io/" class="main-link">← Zur Hauptseite</a>
+
+    <button id="toggle-dark-mode">🌙 Dark Mode</button>
+
+    <h1>KI & Urheberrecht – Aktuelle Streitfälle (2025)</h1>
+
+    <h2>Internationale Fälle</h2>
+    <ul>
+      <li><strong>Autoren vs. OpenAI & Meta (USA):</strong><br />
+        Sammelklagen prominenter Autoren (z. B. G. R. R. Martin, S. Silverman) wegen unlizenzierter Nutzung ihrer Werke zum KI-Training.<br />
+        → Quelle: <em>The New York Times, 2024</em></li>
+
+      <li><strong>Getty Images vs. Stability AI (UK/USA):</strong><br />
+        Vorwurf: Stable Diffusion nutzt Millionen Getty-Fotos ohne Lizenz.<br />
+        → Quelle: <em>Reuters, 2024</em></li>
+
+      <li><strong>KI-Musik & Deepfake-Stimmen (weltweit):</strong><br />
+        KI imitiert Stars wie Drake/The Weeknd – Songs tauchen auf Spotify &amp; Co. auf.<br />
+        → Quelle: <em>BBC, 2023</em></li>
+    </ul>
+
+    <h2>Deutschland & EU</h2>
+    <ul>
+      <li>Noch keine Grundsatzurteile, aber wachsender Druck durch Verlage, GEMA & Autorenverbände.<br />
+        → Quelle: <em>FAZ, 2025</em></li>
+    </ul>
+
+    <hr />
+
+    <h2>Zentrale Streitfragen</h2>
+    <ul>
+      <li>Dürfen KI-Modelle mit geschützten Werken trainieren?</li>
+      <li>Wer haftet bei Ähnlichkeiten oder Kopien?</li>
+      <li>Sind KI-Outputs urheberrechtlich schützbar?</li>
+      <li>Werden Marken- oder Persönlichkeitsrechte verletzt?</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      Inhalte dieser Seite stehen – soweit nicht anders gekennzeichnet – unter
+      <a
+        href="https://creativecommons.org/publicdomain/zero/1.0/deed.de"
+        target="_blank"
+        rel="license noopener"
+        >CC0 1.0 (Public Domain)</a
+      >.
+    </p>
+    <p>
+      <a
+        href="https://creativecommons.org/publicdomain/zero/1.0/"
+        target="_blank"
+        rel="license noopener"
+        ><img
+          src="https://licensebuttons.net/p/zero/1.0/88x31.png"
+          alt="CC0"
+          style="border: 0"
+      /></a>
+    </p>
+  </footer>
+</body>
+</html>
